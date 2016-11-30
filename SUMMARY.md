@@ -5,5 +5,5 @@
    * [Member](member.md)
 * [Defining Methods](defining_methods.md)
 * [Java Client SDK](java_client_sdk.md)
-   * Member
+   * [Member](java/member.md)
 
