@@ -8,7 +8,7 @@ Format menggunakan [hal+json](http://stateless.co/hal_specification.html) dengan
 
 ### Mendapatkan data publik anggota berdasarkan ID
 
-TODO: Sebaiknya mirip dengan hasil ORCID Public API. Contoh:
+TODO: Sebaiknya mirip dengan struktur hasil [ORCID API](https://members.orcid.org/api). Contoh:
 
 Request:
 
