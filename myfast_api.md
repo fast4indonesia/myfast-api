@@ -7,7 +7,9 @@ GET /api/members/findAllByNameTerm?q=yusuf
 Hasilnya adalah 
 
 ```json
-{
-  "name": "yusuf"
-}
+[
+  {
+    "name": "Yusuf Habibur Rahman"
+  }
+]
 ```
