@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [MyFAST API](myfast_api.md)
-* Defining Methods
+* [Defining Methods](defining_methods.md)
 
