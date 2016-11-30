@@ -5,7 +5,7 @@ Disarankan menggunakan [Postman](https://www.getpostman.com/).
 ## Mencari Anggota berdasarkan Nama
 
 ```
-GET /api/members/findAllByNameTerm?q=yusuf
+GET /api/members/search/findAllByNameTerm?q=yusuf
 ```
 
 Hasilnya adalah 
