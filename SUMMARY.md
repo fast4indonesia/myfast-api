@@ -1,4 +1,4 @@
 # Summary
 
-* MyFAST API
+* [MyFAST API](myfast_api.md)
 
