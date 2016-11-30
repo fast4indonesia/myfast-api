@@ -3,5 +3,5 @@
 * [Introduction](README.md)
 * [MyFAST API](myfast_api.md)
 * [Defining Methods](defining_methods.md)
-* Java Client SDK
+* [Java Client SDK](java_client_sdk.md)
 
