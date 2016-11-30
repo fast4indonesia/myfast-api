@@ -6,3 +6,6 @@ Java Client SDK digunakan untuk mengakses layanan di MyFAST API menggunakan Andr
 
 ### Mencari member berdasarkan keyword nama
 
+```java
+Pageable<Member> page = memberRepository.findAllByNameTerm("yusuf");
+```
