@@ -1,4 +1,4 @@
-# MyFAST API
+# HTTP API
 
 Disarankan menggunakan [Postman](https://www.getpostman.com/).
 
