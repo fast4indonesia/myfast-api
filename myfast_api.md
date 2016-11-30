@@ -209,6 +209,7 @@ Response:
 
 ```
 GET /api/members/search/findAllByNameTerm?q=yusuf
+Accept: application/json
 ```
 
 Hasilnya adalah 
@@ -248,6 +249,7 @@ Hasilnya adalah
 
 ```
 GET /api/members/search/findAllWorkTerm?q=scripthink
+Accept: application/json
 ```
 
 Hasilnya adalah 
@@ -282,6 +284,3 @@ Hasilnya adalah
     "number": 0
   }}
 ```
-
-
-
