@@ -1,5 +1,7 @@
 # MyFAST API
 
+Disarankan menggunakan [Postman](https://www.getpostman.com/).
+
 ## Mencari Anggota berdasarkan Nama
 
 ```
