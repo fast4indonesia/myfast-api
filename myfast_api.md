@@ -1,5 +1,7 @@
 # MyFAST API
 
+## Mencari Anggota berdasarkan Nama
+
 ```
 GET /api/members/findAllByNameTerm?q=yusuf
 ```
@@ -7,9 +9,13 @@ GET /api/members/findAllByNameTerm?q=yusuf
 Hasilnya adalah 
 
 ```json
-[
-  {
-    "name": "Yusuf Habibur Rahman"
+{
+  "_embedded": {
+    "members": [
+      {
+        "name": "Yusuf Habibur Rahman"
+      }
+    ]
   }
-]
+}
 ```
