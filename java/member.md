@@ -6,15 +6,26 @@ import {MemberService} from './member/member.service';
 
 ## Mencari member berdasarkan keyword nama
 
-```java
-Pageable<Member> page = memberService.findAllByNameTerm("yusuf");
+```typescript
+memberService.findAllByNameTerm('yusuf')
+  .subscribe(data => {
+    this.members = data._embedded.members;
+  }, error => {
+    window.alert(error.exception + ': ' + error.message);
+  });
 ```
+
+Referensi: Lihat [](/member.md)
 
 ## Mencari member berdasarkan keyword pekerjaan \(_job title_ atau _organization_\)
 
-```java
-Pageable<Member> page = memberRepository.findAllByWorkTerm("yusuf");
+```typescript
+memberService.findAllByWorkTerm('programmer')
+  .subscribe(data => {
+    this.members = data._embedded.members;
+  }, error => {
+    window.alert(error.exception + ': ' + error.message);
+  });
 ```
 
-
-
+Referensi: Lihat [](/member.md)

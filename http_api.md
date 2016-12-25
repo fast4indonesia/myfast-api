@@ -20,5 +20,16 @@ Saat login, JWT token yang dihasilkan oleh server memiliki satu property yaitu *
 sub: {{userId}}
 ```
 
+## Error
 
+Setiap error harus dikembalikan dengan format `Content-Type: application/json` dengan struktur sebagai berikut:
 
+```json
+{
+  "timestamp": "2016-12-24T10:48:37.583+0000",
+  "status": 403,
+  "error": "Forbidden",
+  "message":"Access is denied",
+  "path": "/api/members"
+}
+```

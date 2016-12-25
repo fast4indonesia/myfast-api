@@ -5,9 +5,9 @@
 
 ## API
 * [HTTP API](http_api.md)
-* [Member](member.md)
+* [Member HTTP API](member.md)
 
 ## Angular2 SDK
-* [Java Client SDK](java_client_sdk.md)
-* [Member](java/member.md)
+* [Angular2 SDK](java_client_sdk.md)
+* [Member Angular2 API](java/member.md)
 
