@@ -8,10 +8,16 @@ Format menggunakan [hal+json](http://stateless.co/hal_specification.html) dengan
 
 Autentikasi menggunakan [JSON Web Tokens \(JWT\)](https://jwt.io/).
 
-Setiap HTTP request ke **semua endpoint kecuali `/api/login**`**, wajib menyertakan `Authorization` header sebagai berikut:
+Setiap HTTP request ke **semua endpoint kecuali \`/api/login**`**, wajib menyertakan`Authorization\` header sebagai berikut:
 
 ```
 Authorization: Bearer {{token}}
+```
+
+Saat login, JWT token yang dihasilkan oleh server memiliki satu property yaitu **`sub` **dengan **ID user**.
+
+```
+sub: {{userId}}
 ```
 
 
