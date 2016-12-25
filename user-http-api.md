@@ -50,7 +50,7 @@ Response:
 | mobileNumber | string\[\] | Nomor seluler utama. |
 | mobileNumberValidated | boolean | Status validasi nomor seluler utama. |
 | mobileNumbers | PhoneNumber\[\] | Semua nomor seluler beserta status validasinya. |
-| profiles | Profile\[\] | Status setiap profile yang terhubung dengan user ini. Status: ACTIVE (terhubung), PENDING (menunggu approval moderator) |
+| profiles | Profile\[\] | Status setiap profile yang terhubung dengan user ini. Status: ACTIVE (terhubung), PENDING (menunggu approval moderator). |
 
 ## Link ke Profile
 
