@@ -1,15 +1,15 @@
-# Member
+# Profile
 
 ```typescript
-import {MemberService} from './member/member.service';
+import {ProfileService} from './profile/profile.service';
 ```
 
-## Mencari member berdasarkan keyword nama
+## Mencari profile berdasarkan keyword nama
 
 ```typescript
-memberService.findAllByNameTerm('yusuf')
+profileService.findAllByNameTerm('yusuf')
   .subscribe(data => {
-    this.members = data._embedded.members;
+    this.profiles = data._embedded.profiles;
   }, error => {
     window.alert(error.exception + ': ' + error.message);
   });
@@ -17,12 +17,12 @@ memberService.findAllByNameTerm('yusuf')
 
 Referensi: Lihat [](/member.md)
 
-## Mencari member berdasarkan keyword pekerjaan \(_job title_ atau _organization_\)
+## Mencari profile berdasarkan keyword pekerjaan \(_job title_ atau _organization_\)
 
 ```typescript
-memberService.findAllByWorkTerm('programmer')
+profileService.findAllByWorkTerm('programmer')
   .subscribe(data => {
-    this.members = data._embedded.members;
+    this.profiles = data._embedded.profiles;
   }, error => {
     window.alert(error.exception + ': ' + error.message);
   });

@@ -1,4 +1,4 @@
-# HTTP API
+# Tentang HTTP API
 
 Untuk membantu development dan testing, disarankan menggunakan [Postman](https://www.getpostman.com/).
 
@@ -30,6 +30,6 @@ Setiap error harus dikembalikan dengan format `Content-Type: application/json` d
   "status": 403,
   "error": "Forbidden",
   "message":"Access is denied",
-  "path": "/api/members"
+  "path": "/api/profiles"
 }
 ```

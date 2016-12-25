@@ -3,11 +3,13 @@
 ## Overview
 * [Introduction](README.md)
 
-## API
-* [HTTP API](http_api.md)
-* [Member HTTP API](member.md)
+## HTTP API
+* [Tentang HTTP API](http_api.md)
+* [Authentication HTTP API](authentication-http-api.md)
+* [User HTTP API](user-http-api.md)
+* [Profile HTTP API](member.md)
 
 ## Angular2 SDK
 * [Angular2 SDK](java_client_sdk.md)
-* [Member Angular2 API](java/member.md)
+* [Profile Angular2 API](java/member.md)
 

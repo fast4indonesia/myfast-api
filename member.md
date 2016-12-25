@@ -1,13 +1,13 @@
-# Member
+# Profile
 
-## Mendapatkan data publik anggota berdasarkan ID
+## Mendapatkan data publik Profile berdasarkan ID
 
 TODO: Sebaiknya mirip dengan struktur hasil [ORCID API](https://members.orcid.org/api). Contoh:
 
 Request:
 
 ```
-GET /api/members/1
+GET /api/profiles/1
 Authorization: Bearer {{token}}
 Accept: application/json
 ```
@@ -20,11 +20,12 @@ Response:
 }
 ```
 
-## Mencari Anggota berdasarkan Nama
+## Mencari Profile berdasarkan Nama
 
 ```
-GET /api/members/search/findAllByNameTerm?q=yusuf
+GET /api/profiles/search/findAllByNameTerm?q=yusuf
 Accept: application/json
+Authorization: Bearer {{token}}
 ```
 
 Hasilnya adalah
@@ -32,7 +33,7 @@ Hasilnya adalah
 ```json
 {
   "_embedded": {
-    "members": [
+    "profiles": [
       {
         "name": "Yusuf Habibur Rahman"
       }
@@ -46,11 +47,12 @@ Hasilnya adalah
   }}
 ```
 
-## Mencari Anggota berdasarkan Pekerjaan \(_job title_ atau _organization_\)
+## Mencari Profiles berdasarkan Pekerjaan \(_job title_ atau _organization_\)
 
 ```
-GET /api/members/search/findAllWorkTerm?q=scripthink
+GET /api/profiles/search/findAllWorkTerm?q=scripthink
 Accept: application/json
+Authorization: Bearer {{token}}
 ```
 
 Hasilnya adalah
@@ -58,7 +60,7 @@ Hasilnya adalah
 ```json
 {
   "_embedded": {
-    "members": [
+    "profiles": [
       {
         "name": "Yusuf Habibur Rahman"
       }
