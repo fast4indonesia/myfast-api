@@ -1,5 +1,9 @@
 # User HTTP API
 
+User adalah pengguna yang sudah registrasi dan dapat melakukan login ke aplikasi. User dapat melakukan klaim Profile ke satu atau lebih Profile. User yang sudah melakukan klaim Profile dapat melakukan perubahan data Profile.
+
+## Mendapatkan data user yang sedang login
+
 ```
 GET /api/me
 Authorization: Bearer {{token}}
