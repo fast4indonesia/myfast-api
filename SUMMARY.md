@@ -11,9 +11,8 @@
 
 ## Java SDK
 
-* [Defining Methods](defining_methods.md)
 * [Java Client SDK](java_client_sdk.md)
-  * [Member](java/member.md)
+* [Member](java/member.md)
 
 
 
