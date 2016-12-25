@@ -11,5 +11,6 @@
 
 ## Angular2 SDK
 * [Angular2 SDK](java_client_sdk.md)
+* [User Angular2 API](user-angular2-api.md)
 * [Profile Angular2 API](java/member.md)
 
