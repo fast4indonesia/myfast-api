@@ -7,6 +7,78 @@ TODO: Sebaiknya mirip dengan struktur hasil [ORCID API](https://members.orcid.or
 Request:
 
 ```
+GET /api/members/1
+Authorization: Bearer {{token}}
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+  "name": "Yusuf Habibur Rahman"
+}
+```
+
+## Mencari Anggota berdasarkan Nama
+
+```
+GET /api/members/search/findAllByNameTerm?q=yusuf
+Accept: application/json
+```
+
+Hasilnya adalah
+
+```json
+{
+  "_embedded": {
+    "members": [
+      {
+        "name": "Yusuf Habibur Rahman"
+      }
+    ]
+  },
+  "page": {
+    "size": 10,
+    "totalElements": 91,
+    "totalPages": 10,
+    "number": 0
+  }}
+```
+
+## Mencari Anggota berdasarkan Pekerjaan \(_job title_ atau _organization_\)
+
+```
+GET /api/members/search/findAllWorkTerm?q=scripthink
+Accept: application/json
+```
+
+Hasilnya adalah
+
+```json
+{
+  "_embedded": {
+    "members": [
+      {
+        "name": "Yusuf Habibur Rahman"
+      }
+    ]
+  },
+  "page": {
+    "size": 10,
+    "totalElements": 91,
+    "totalPages": 10,
+    "number": 0
+  }}
+```
+
+## TODO: ORCID Compatibility
+
+TODO: Sebaiknya mirip atau mengakomodasi struktur hasil [ORCID API](https://members.orcid.org/api). Contoh:
+
+Request:
+
+```
 GET https://orcid.org/0000-0002-5231-2802
 Accept: application/json
 ```
@@ -199,82 +271,7 @@ Response:
 }
 ```
 
-## Mencari Anggota berdasarkan Nama
 
-```
-GET /api/members/search/findAllByNameTerm?q=yusuf
-Accept: application/json
-```
 
-Hasilnya adalah 
 
-```json
-{
-  "_embedded": {
-    "members": [
-      {
-        "name": "Yusuf Habibur Rahman"
-      }
-    ]
-  },
-  "_links": {
-    "first": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&page=0&size=10"
-    },
-    "self": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&size=10"
-    },
-    "next": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&page=1&size=10"
-    },
-    "last": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&page=9&size=10"
-    }
-  },
-  "page": {
-    "size": 10,
-    "totalElements": 91,
-    "totalPages": 10,
-    "number": 0
-  }}
-```
 
-## Mencari Anggota berdasarkan Pekerjaan (_job title_ atau _organization_)
-
-```
-GET /api/members/search/findAllWorkTerm?q=scripthink
-Accept: application/json
-```
-
-Hasilnya adalah 
-
-```json
-{
-  "_embedded": {
-    "members": [
-      {
-        "name": "Yusuf Habibur Rahman"
-      }
-    ]
-  },
-  "_links": {
-    "first": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&page=0&size=10"
-    },
-    "self": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&size=10"
-    },
-    "next": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&page=1&size=10"
-    },
-    "last": {
-      "href": "https://my.fast.or.id/api/members/search/findAllByName?q=yusuf&page=9&size=10"
-    }
-  },
-  "page": {
-    "size": 10,
-    "totalElements": 91,
-    "totalPages": 10,
-    "number": 0
-  }}
-```
