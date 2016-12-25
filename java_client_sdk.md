@@ -1,5 +1,4 @@
-# Java Client SDK
+# Angular2 Client SDK
 
-Java Client SDK digunakan untuk mengakses layanan di MyFAST API menggunakan Android app maupun server-side Java app. Versi Java yang dibutuhkan adalah Java 8.
+Angular2 Client SDK digunakan untuk mengakses layanan di MyFAST server via API menggunakan Ionic app.
 
-_Detail implementasi:_ Di dalam SDK ini, untuk akses REST HTTP Client dan sebagainya, menggunakan library [Spring for Android](http://projects.spring.io/spring-android/).
