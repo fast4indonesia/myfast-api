@@ -32,7 +32,12 @@ Response:
       "vaidated": true
     }
   ],
-  "profileIds": [354, 1734]
+  "profiles": [
+    {
+      "profileId": 1234,
+      "status": "ACTIVE"
+    }
+  ]
 }
 ```
 
@@ -45,7 +50,53 @@ Response:
 | mobileNumber | string\[\] | Nomor seluler utama. |
 | mobileNumberValidated | boolean | Status validasi nomor seluler utama. |
 | mobileNumbers | PhoneNumber\[\] | Semua nomor seluler beserta status validasinya. |
-| profileIds | int\[\] | Daftar profile yang terhubung dengan user ini. |
+| profiles | Profile\[\] | Status setiap profile yang terhubung dengan user ini. Status: ACTIVE (terhubung), PENDING (menunggu approval moderator) |
 
+## Link ke Profile
 
+Request aktivasi atau menghubungkan sebuah user dengan Profile tertentu.
 
+Link Profile seharusnya berjalan otomatis untuk user yang memiliki email atau nomor seluler tervalidasi yang persis sama dengan yang terdaftar di data Profil. Untuk melakukan request link Profile secara manual, maka akan divalidasi dulu oleh moderator.
+
+```
+POST /api/me/link
+Authorization: Bearer {{token}}
+Accept: application/json
+```
+
+```json
+{
+  "profileId": 1234
+}
+```
+
+Response:
+
+```json
+{
+  "name": "Yusuf Habibur Rahman",
+  "email": "yusuf.h.rahman@gmail.com",
+  "emailValidated": true,
+  "emails": [
+    {
+      "email": "yusuf.h.rahman@gmail.com",
+      "validated": true
+    }
+  ],
+  "validatedEmails": ["yusuf.h.rahman@gmail.com"],
+  "mobileNumber": "+628...",
+  "mobileNumberValidated": true,
+  "mobileNumbers": [
+    {
+      "phoneNumber": "+628...",
+      "vaidated": true
+    }
+  ],
+  "profiles": [
+    {
+      "profileId": 1234,
+      "status": ACTIVE
+    }
+  ]
+}
+```
